@@ -1,1 +1,0 @@
-ncverilog tb.sv LASER.v +define+USECOLOR +access+r
