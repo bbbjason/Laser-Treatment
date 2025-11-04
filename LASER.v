@@ -58,4 +58,31 @@ always @(posedge CLK or posedge RST) begin
     end
 end
 
+// 5x5 LUT indicating whether (dx^2 + dy^2) <= 16 for |dx|, |dy| in [0,4]
+localparam [4:0] DIST_LUT_ROW0 = 5'b11111; // |dx| = 0, |dy| = 0..4
+localparam [4:0] DIST_LUT_ROW1 = 5'b11110; // |dx| = 1
+localparam [4:0] DIST_LUT_ROW2 = 5'b11110; // |dx| = 2
+localparam [4:0] DIST_LUT_ROW3 = 5'b11100; // |dx| = 3
+localparam [4:0] DIST_LUT_ROW4 = 5'b10000; // |dx| = 4
+
+function lut_in_circle;
+    input [2:0] abs_dx;
+    input [2:0] abs_dy;
+    reg [4:0] lut_row;
+begin
+    case (abs_dx)
+        3'd0: lut_row = DIST_LUT_ROW0;
+        3'd1: lut_row = DIST_LUT_ROW1;
+        3'd2: lut_row = DIST_LUT_ROW2;
+        3'd3: lut_row = DIST_LUT_ROW3;
+        3'd4: lut_row = DIST_LUT_ROW4;
+        default: lut_row = 5'b00000;
+    endcase
+    if (abs_dy < 3'd5)
+        lut_in_circle = lut_row[abs_dy];
+    else
+        lut_in_circle = 1'b0;
+end
+endfunction
+
 endmodule
