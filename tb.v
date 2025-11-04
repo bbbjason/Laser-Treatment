@@ -3,7 +3,7 @@
 `define SDFFILE    "./LASER_syn.sdf"
 `define MAX_CYCLE_PER_PATTERN  500
 //`define USECOLOR 
-`define P2
+`define P1
 
 module testfixture();
 
