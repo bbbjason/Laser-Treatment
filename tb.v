@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 `define CYCLE      8.0  
 `define SDFFILE    "./LASER_syn.sdf"
-`define MAX_CYCLE_PER_PATTERN  500
+`define MAX_CYCLE_PER_PATTERN  100
 //`define USECOLOR 
 `define P1
 
@@ -300,7 +300,7 @@ end
 
 initial begin
     $dumpfile("laser.vcd");
-    $dumpvars();
+    $dumpvars(0, u_LASER);
 end
 
 task count_cover;
