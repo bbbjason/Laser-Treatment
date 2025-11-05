@@ -20,9 +20,10 @@ reg [ 5:0] coord_idx;
 reg [39:0] cover_mask [0:255];
 
 wire [255:0] show_covers_point;
+genvar g;
 generate
-    for (row = 0; row < 256; row = row + 1) begin
-        assign show_covers_point[row] = cover_mask[row][0];
+    for (g = 0; g < 256; g = g + 1) begin: show
+        assign show_covers_point[g] = cover_mask[g][0];
     end
 endgenerate
 
@@ -81,6 +82,11 @@ always @(posedge CLK or posedge RST) begin
                         cover_mask[row][0] <= 1'b1;
                     end
                 end
+            end
+        end
+        else begin
+            for (row = 0; row < 256; row = row + 1) begin
+                cover_mask[row] <= cover_mask[row];
             end
         end
     end
