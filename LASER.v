@@ -14,8 +14,6 @@ output reg DONE);
 integer i;
 integer row;
 
-reg [ 3:0] X_d [0:39];
-reg [ 3:0] Y_d [0:39];
 reg [ 5:0] coord_idx;
 reg [39:0] cover_mask [0:255];
 
@@ -23,7 +21,7 @@ wire [255:0] show_covers_point;
 genvar j;
 generate
     for (j = 0; j < 256; j = j + 1) begin : SHOW_COVERS_POINT_GEN
-        assign show_covers_point[j] = circle_covers_point(j[7:0], X, Y);
+        assign show_covers_point[j] = cover_mask[j][39];
     end
 endgenerate
 
@@ -48,23 +46,13 @@ end
 always @(posedge CLK or posedge RST) begin
     if (RST) begin
         coord_idx <= 6'd0;
-        for (i = 0; i < 40; i = i + 1) begin
-            X_d[i] <= 4'd0;
-            Y_d[i] <= 4'd0;
-        end
     end
     else begin 
         if (coord_idx < 6'd40) begin
-            X_d[coord_idx] <= X;
-            Y_d[coord_idx] <= Y;
             coord_idx <= coord_idx + 1;
         end
         else begin
             coord_idx <= coord_idx;
-            for (i = 0; i < 40; i = i + 1) begin
-                X_d[i] <= X_d[i];
-                Y_d[i] <= Y_d[i];
-            end
         end
     end
 end
@@ -77,10 +65,8 @@ always @(posedge CLK or posedge RST) begin
     end
     else begin
         if (coord_idx < 6'd40) begin
-            if (coord_idx == 6'd0) begin
-                for (row = 0; row < 256; row = row + 1) begin
-                    cover_mask[row][0] <= (circle_covers_point(row[7:0], X, Y));
-                end
+            for (row = 0; row < 256; row = row + 1) begin
+                cover_mask[row][coord_idx] <= (circle_covers_point(row[7:0], X, Y));
             end
         end
         else begin
