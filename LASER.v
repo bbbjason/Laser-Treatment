@@ -20,12 +20,13 @@ reg [ 5:0] coord_idx;
 reg [39:0] cover_mask [0:255];
 
 wire [255:0] show_covers_point;
-genvar g;
+genvar j;
 generate
-    for (g = 0; g < 256; g = g + 1) begin: show
-        assign show_covers_point[g] = cover_mask[g][0];
+    for (j = 0; j < 256; j = j + 1) begin : SHOW_COVERS_POINT_GEN
+        assign show_covers_point[j] = circle_covers_point(j[7:0], X, Y);
     end
 endgenerate
+
 
 always @(posedge CLK or posedge RST) begin
     if (RST) begin
@@ -78,9 +79,7 @@ always @(posedge CLK or posedge RST) begin
         if (coord_idx < 6'd40) begin
             if (coord_idx == 6'd0) begin
                 for (row = 0; row < 256; row = row + 1) begin
-                    if (circle_covers_point(row[7:0], X, Y)) begin
-                        cover_mask[row][0] <= 1'b1;
-                    end
+                    cover_mask[row][0] <= (circle_covers_point(row[7:0], X, Y));
                 end
             end
         end
@@ -92,25 +91,17 @@ always @(posedge CLK or posedge RST) begin
     end
 end
 
-
-// 5x5 LUT indicating whether (dx^2 + dy^2) <= 16 for |dx|, |dy| in [0,4]
-localparam [4:0] DIST_LUT_ROW0 = 5'b11111; // |dx| = 0, |dy| = 0..4
-localparam [4:0] DIST_LUT_ROW1 = 5'b11110; // |dx| = 1
-localparam [4:0] DIST_LUT_ROW2 = 5'b11110; // |dx| = 2
-localparam [4:0] DIST_LUT_ROW3 = 5'b11100; // |dx| = 3
-localparam [4:0] DIST_LUT_ROW4 = 5'b10000; // |dx| = 4
-
 function lut_in_circle;
     input [2:0] abs_dx;
     input [2:0] abs_dy;
     reg [4:0] lut_row;
 begin
     case (abs_dx)
-        3'd0: lut_row = DIST_LUT_ROW0;
-        3'd1: lut_row = DIST_LUT_ROW1;
-        3'd2: lut_row = DIST_LUT_ROW2;
-        3'd3: lut_row = DIST_LUT_ROW3;
-        3'd4: lut_row = DIST_LUT_ROW4;
+        3'd0: lut_row = 5'b11111;
+        3'd1: lut_row = 5'b01111;
+        3'd2: lut_row = 5'b01111;
+        3'd3: lut_row = 5'b00111;
+        3'd4: lut_row = 5'b00001;
         default: lut_row = 5'b00000;
     endcase
     if (abs_dy < 3'd5)

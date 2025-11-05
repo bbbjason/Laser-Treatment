@@ -1,0 +1,2439 @@
+$date
+	Wed Nov  5 12:08:00 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module testfixture $end
+$scope module u_LASER $end
+$var wire 1 ! CLK $end
+$var wire 1 " RST $end
+$var wire 4 # X [3:0] $end
+$var wire 4 $ Y [3:0] $end
+$var wire 256 % show_covers_point [255:0] $end
+$var reg 4 & C1X [3:0] $end
+$var reg 4 ' C1Y [3:0] $end
+$var reg 4 ( C2X [3:0] $end
+$var reg 4 ) C2Y [3:0] $end
+$var reg 1 * DONE $end
+$var reg 6 + coord_idx [5:0] $end
+$var integer 32 , i [31:0] $end
+$var integer 32 - row [31:0] $end
+$scope function circle_covers_point $end
+$var reg 4 . abs_dx [3:0] $end
+$var reg 4 / abs_dy [3:0] $end
+$var reg 8 0 circle_idx [7:0] $end
+$var reg 4 1 circle_x [3:0] $end
+$var reg 4 2 circle_y [3:0] $end
+$var reg 4 3 point_x [3:0] $end
+$var reg 4 4 point_y [3:0] $end
+$upscope $end
+$scope function lut_in_circle $end
+$var reg 3 5 abs_dx [2:0] $end
+$var reg 3 6 abs_dy [2:0] $end
+$var reg 5 7 lut_row [4:0] $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[0] $end
+$var parameter 2 8 j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[1] $end
+$var parameter 2 9 j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[2] $end
+$var parameter 3 : j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[3] $end
+$var parameter 3 ; j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[4] $end
+$var parameter 4 < j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[5] $end
+$var parameter 4 = j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[6] $end
+$var parameter 4 > j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[7] $end
+$var parameter 4 ? j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[8] $end
+$var parameter 5 @ j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[9] $end
+$var parameter 5 A j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[10] $end
+$var parameter 5 B j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[11] $end
+$var parameter 5 C j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[12] $end
+$var parameter 5 D j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[13] $end
+$var parameter 5 E j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[14] $end
+$var parameter 5 F j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[15] $end
+$var parameter 5 G j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[16] $end
+$var parameter 6 H j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[17] $end
+$var parameter 6 I j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[18] $end
+$var parameter 6 J j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[19] $end
+$var parameter 6 K j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[20] $end
+$var parameter 6 L j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[21] $end
+$var parameter 6 M j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[22] $end
+$var parameter 6 N j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[23] $end
+$var parameter 6 O j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[24] $end
+$var parameter 6 P j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[25] $end
+$var parameter 6 Q j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[26] $end
+$var parameter 6 R j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[27] $end
+$var parameter 6 S j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[28] $end
+$var parameter 6 T j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[29] $end
+$var parameter 6 U j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[30] $end
+$var parameter 6 V j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[31] $end
+$var parameter 6 W j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[32] $end
+$var parameter 7 X j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[33] $end
+$var parameter 7 Y j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[34] $end
+$var parameter 7 Z j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[35] $end
+$var parameter 7 [ j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[36] $end
+$var parameter 7 \ j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[37] $end
+$var parameter 7 ] j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[38] $end
+$var parameter 7 ^ j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[39] $end
+$var parameter 7 _ j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[40] $end
+$var parameter 7 ` j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[41] $end
+$var parameter 7 a j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[42] $end
+$var parameter 7 b j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[43] $end
+$var parameter 7 c j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[44] $end
+$var parameter 7 d j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[45] $end
+$var parameter 7 e j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[46] $end
+$var parameter 7 f j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[47] $end
+$var parameter 7 g j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[48] $end
+$var parameter 7 h j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[49] $end
+$var parameter 7 i j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[50] $end
+$var parameter 7 j j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[51] $end
+$var parameter 7 k j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[52] $end
+$var parameter 7 l j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[53] $end
+$var parameter 7 m j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[54] $end
+$var parameter 7 n j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[55] $end
+$var parameter 7 o j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[56] $end
+$var parameter 7 p j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[57] $end
+$var parameter 7 q j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[58] $end
+$var parameter 7 r j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[59] $end
+$var parameter 7 s j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[60] $end
+$var parameter 7 t j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[61] $end
+$var parameter 7 u j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[62] $end
+$var parameter 7 v j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[63] $end
+$var parameter 7 w j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[64] $end
+$var parameter 8 x j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[65] $end
+$var parameter 8 y j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[66] $end
+$var parameter 8 z j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[67] $end
+$var parameter 8 { j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[68] $end
+$var parameter 8 | j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[69] $end
+$var parameter 8 } j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[70] $end
+$var parameter 8 ~ j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[71] $end
+$var parameter 8 !" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[72] $end
+$var parameter 8 "" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[73] $end
+$var parameter 8 #" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[74] $end
+$var parameter 8 $" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[75] $end
+$var parameter 8 %" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[76] $end
+$var parameter 8 &" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[77] $end
+$var parameter 8 '" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[78] $end
+$var parameter 8 (" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[79] $end
+$var parameter 8 )" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[80] $end
+$var parameter 8 *" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[81] $end
+$var parameter 8 +" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[82] $end
+$var parameter 8 ," j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[83] $end
+$var parameter 8 -" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[84] $end
+$var parameter 8 ." j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[85] $end
+$var parameter 8 /" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[86] $end
+$var parameter 8 0" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[87] $end
+$var parameter 8 1" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[88] $end
+$var parameter 8 2" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[89] $end
+$var parameter 8 3" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[90] $end
+$var parameter 8 4" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[91] $end
+$var parameter 8 5" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[92] $end
+$var parameter 8 6" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[93] $end
+$var parameter 8 7" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[94] $end
+$var parameter 8 8" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[95] $end
+$var parameter 8 9" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[96] $end
+$var parameter 8 :" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[97] $end
+$var parameter 8 ;" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[98] $end
+$var parameter 8 <" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[99] $end
+$var parameter 8 =" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[100] $end
+$var parameter 8 >" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[101] $end
+$var parameter 8 ?" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[102] $end
+$var parameter 8 @" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[103] $end
+$var parameter 8 A" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[104] $end
+$var parameter 8 B" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[105] $end
+$var parameter 8 C" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[106] $end
+$var parameter 8 D" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[107] $end
+$var parameter 8 E" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[108] $end
+$var parameter 8 F" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[109] $end
+$var parameter 8 G" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[110] $end
+$var parameter 8 H" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[111] $end
+$var parameter 8 I" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[112] $end
+$var parameter 8 J" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[113] $end
+$var parameter 8 K" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[114] $end
+$var parameter 8 L" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[115] $end
+$var parameter 8 M" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[116] $end
+$var parameter 8 N" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[117] $end
+$var parameter 8 O" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[118] $end
+$var parameter 8 P" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[119] $end
+$var parameter 8 Q" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[120] $end
+$var parameter 8 R" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[121] $end
+$var parameter 8 S" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[122] $end
+$var parameter 8 T" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[123] $end
+$var parameter 8 U" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[124] $end
+$var parameter 8 V" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[125] $end
+$var parameter 8 W" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[126] $end
+$var parameter 8 X" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[127] $end
+$var parameter 8 Y" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[128] $end
+$var parameter 9 Z" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[129] $end
+$var parameter 9 [" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[130] $end
+$var parameter 9 \" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[131] $end
+$var parameter 9 ]" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[132] $end
+$var parameter 9 ^" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[133] $end
+$var parameter 9 _" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[134] $end
+$var parameter 9 `" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[135] $end
+$var parameter 9 a" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[136] $end
+$var parameter 9 b" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[137] $end
+$var parameter 9 c" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[138] $end
+$var parameter 9 d" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[139] $end
+$var parameter 9 e" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[140] $end
+$var parameter 9 f" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[141] $end
+$var parameter 9 g" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[142] $end
+$var parameter 9 h" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[143] $end
+$var parameter 9 i" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[144] $end
+$var parameter 9 j" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[145] $end
+$var parameter 9 k" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[146] $end
+$var parameter 9 l" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[147] $end
+$var parameter 9 m" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[148] $end
+$var parameter 9 n" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[149] $end
+$var parameter 9 o" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[150] $end
+$var parameter 9 p" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[151] $end
+$var parameter 9 q" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[152] $end
+$var parameter 9 r" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[153] $end
+$var parameter 9 s" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[154] $end
+$var parameter 9 t" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[155] $end
+$var parameter 9 u" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[156] $end
+$var parameter 9 v" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[157] $end
+$var parameter 9 w" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[158] $end
+$var parameter 9 x" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[159] $end
+$var parameter 9 y" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[160] $end
+$var parameter 9 z" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[161] $end
+$var parameter 9 {" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[162] $end
+$var parameter 9 |" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[163] $end
+$var parameter 9 }" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[164] $end
+$var parameter 9 ~" j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[165] $end
+$var parameter 9 !# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[166] $end
+$var parameter 9 "# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[167] $end
+$var parameter 9 ## j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[168] $end
+$var parameter 9 $# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[169] $end
+$var parameter 9 %# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[170] $end
+$var parameter 9 &# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[171] $end
+$var parameter 9 '# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[172] $end
+$var parameter 9 (# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[173] $end
+$var parameter 9 )# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[174] $end
+$var parameter 9 *# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[175] $end
+$var parameter 9 +# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[176] $end
+$var parameter 9 ,# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[177] $end
+$var parameter 9 -# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[178] $end
+$var parameter 9 .# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[179] $end
+$var parameter 9 /# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[180] $end
+$var parameter 9 0# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[181] $end
+$var parameter 9 1# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[182] $end
+$var parameter 9 2# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[183] $end
+$var parameter 9 3# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[184] $end
+$var parameter 9 4# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[185] $end
+$var parameter 9 5# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[186] $end
+$var parameter 9 6# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[187] $end
+$var parameter 9 7# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[188] $end
+$var parameter 9 8# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[189] $end
+$var parameter 9 9# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[190] $end
+$var parameter 9 :# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[191] $end
+$var parameter 9 ;# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[192] $end
+$var parameter 9 <# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[193] $end
+$var parameter 9 =# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[194] $end
+$var parameter 9 ># j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[195] $end
+$var parameter 9 ?# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[196] $end
+$var parameter 9 @# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[197] $end
+$var parameter 9 A# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[198] $end
+$var parameter 9 B# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[199] $end
+$var parameter 9 C# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[200] $end
+$var parameter 9 D# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[201] $end
+$var parameter 9 E# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[202] $end
+$var parameter 9 F# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[203] $end
+$var parameter 9 G# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[204] $end
+$var parameter 9 H# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[205] $end
+$var parameter 9 I# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[206] $end
+$var parameter 9 J# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[207] $end
+$var parameter 9 K# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[208] $end
+$var parameter 9 L# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[209] $end
+$var parameter 9 M# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[210] $end
+$var parameter 9 N# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[211] $end
+$var parameter 9 O# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[212] $end
+$var parameter 9 P# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[213] $end
+$var parameter 9 Q# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[214] $end
+$var parameter 9 R# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[215] $end
+$var parameter 9 S# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[216] $end
+$var parameter 9 T# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[217] $end
+$var parameter 9 U# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[218] $end
+$var parameter 9 V# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[219] $end
+$var parameter 9 W# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[220] $end
+$var parameter 9 X# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[221] $end
+$var parameter 9 Y# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[222] $end
+$var parameter 9 Z# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[223] $end
+$var parameter 9 [# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[224] $end
+$var parameter 9 \# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[225] $end
+$var parameter 9 ]# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[226] $end
+$var parameter 9 ^# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[227] $end
+$var parameter 9 _# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[228] $end
+$var parameter 9 `# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[229] $end
+$var parameter 9 a# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[230] $end
+$var parameter 9 b# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[231] $end
+$var parameter 9 c# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[232] $end
+$var parameter 9 d# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[233] $end
+$var parameter 9 e# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[234] $end
+$var parameter 9 f# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[235] $end
+$var parameter 9 g# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[236] $end
+$var parameter 9 h# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[237] $end
+$var parameter 9 i# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[238] $end
+$var parameter 9 j# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[239] $end
+$var parameter 9 k# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[240] $end
+$var parameter 9 l# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[241] $end
+$var parameter 9 m# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[242] $end
+$var parameter 9 n# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[243] $end
+$var parameter 9 o# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[244] $end
+$var parameter 9 p# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[245] $end
+$var parameter 9 q# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[246] $end
+$var parameter 9 r# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[247] $end
+$var parameter 9 s# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[248] $end
+$var parameter 9 t# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[249] $end
+$var parameter 9 u# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[250] $end
+$var parameter 9 v# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[251] $end
+$var parameter 9 w# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[252] $end
+$var parameter 9 x# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[253] $end
+$var parameter 9 y# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[254] $end
+$var parameter 9 z# j $end
+$upscope $end
+$scope begin SHOW_COVERS_POINT_GEN[255] $end
+$var parameter 9 {# j $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b11111111 {#
+b11111110 z#
+b11111101 y#
+b11111100 x#
+b11111011 w#
+b11111010 v#
+b11111001 u#
+b11111000 t#
+b11110111 s#
+b11110110 r#
+b11110101 q#
+b11110100 p#
+b11110011 o#
+b11110010 n#
+b11110001 m#
+b11110000 l#
+b11101111 k#
+b11101110 j#
+b11101101 i#
+b11101100 h#
+b11101011 g#
+b11101010 f#
+b11101001 e#
+b11101000 d#
+b11100111 c#
+b11100110 b#
+b11100101 a#
+b11100100 `#
+b11100011 _#
+b11100010 ^#
+b11100001 ]#
+b11100000 \#
+b11011111 [#
+b11011110 Z#
+b11011101 Y#
+b11011100 X#
+b11011011 W#
+b11011010 V#
+b11011001 U#
+b11011000 T#
+b11010111 S#
+b11010110 R#
+b11010101 Q#
+b11010100 P#
+b11010011 O#
+b11010010 N#
+b11010001 M#
+b11010000 L#
+b11001111 K#
+b11001110 J#
+b11001101 I#
+b11001100 H#
+b11001011 G#
+b11001010 F#
+b11001001 E#
+b11001000 D#
+b11000111 C#
+b11000110 B#
+b11000101 A#
+b11000100 @#
+b11000011 ?#
+b11000010 >#
+b11000001 =#
+b11000000 <#
+b10111111 ;#
+b10111110 :#
+b10111101 9#
+b10111100 8#
+b10111011 7#
+b10111010 6#
+b10111001 5#
+b10111000 4#
+b10110111 3#
+b10110110 2#
+b10110101 1#
+b10110100 0#
+b10110011 /#
+b10110010 .#
+b10110001 -#
+b10110000 ,#
+b10101111 +#
+b10101110 *#
+b10101101 )#
+b10101100 (#
+b10101011 '#
+b10101010 &#
+b10101001 %#
+b10101000 $#
+b10100111 ##
+b10100110 "#
+b10100101 !#
+b10100100 ~"
+b10100011 }"
+b10100010 |"
+b10100001 {"
+b10100000 z"
+b10011111 y"
+b10011110 x"
+b10011101 w"
+b10011100 v"
+b10011011 u"
+b10011010 t"
+b10011001 s"
+b10011000 r"
+b10010111 q"
+b10010110 p"
+b10010101 o"
+b10010100 n"
+b10010011 m"
+b10010010 l"
+b10010001 k"
+b10010000 j"
+b10001111 i"
+b10001110 h"
+b10001101 g"
+b10001100 f"
+b10001011 e"
+b10001010 d"
+b10001001 c"
+b10001000 b"
+b10000111 a"
+b10000110 `"
+b10000101 _"
+b10000100 ^"
+b10000011 ]"
+b10000010 \"
+b10000001 ["
+b10000000 Z"
+b1111111 Y"
+b1111110 X"
+b1111101 W"
+b1111100 V"
+b1111011 U"
+b1111010 T"
+b1111001 S"
+b1111000 R"
+b1110111 Q"
+b1110110 P"
+b1110101 O"
+b1110100 N"
+b1110011 M"
+b1110010 L"
+b1110001 K"
+b1110000 J"
+b1101111 I"
+b1101110 H"
+b1101101 G"
+b1101100 F"
+b1101011 E"
+b1101010 D"
+b1101001 C"
+b1101000 B"
+b1100111 A"
+b1100110 @"
+b1100101 ?"
+b1100100 >"
+b1100011 ="
+b1100010 <"
+b1100001 ;"
+b1100000 :"
+b1011111 9"
+b1011110 8"
+b1011101 7"
+b1011100 6"
+b1011011 5"
+b1011010 4"
+b1011001 3"
+b1011000 2"
+b1010111 1"
+b1010110 0"
+b1010101 /"
+b1010100 ."
+b1010011 -"
+b1010010 ,"
+b1010001 +"
+b1010000 *"
+b1001111 )"
+b1001110 ("
+b1001101 '"
+b1001100 &"
+b1001011 %"
+b1001010 $"
+b1001001 #"
+b1001000 ""
+b1000111 !"
+b1000110 ~
+b1000101 }
+b1000100 |
+b1000011 {
+b1000010 z
+b1000001 y
+b1000000 x
+b111111 w
+b111110 v
+b111101 u
+b111100 t
+b111011 s
+b111010 r
+b111001 q
+b111000 p
+b110111 o
+b110110 n
+b110101 m
+b110100 l
+b110011 k
+b110010 j
+b110001 i
+b110000 h
+b101111 g
+b101110 f
+b101101 e
+b101100 d
+b101011 c
+b101010 b
+b101001 a
+b101000 `
+b100111 _
+b100110 ^
+b100101 ]
+b100100 \
+b100011 [
+b100010 Z
+b100001 Y
+b100000 X
+b11111 W
+b11110 V
+b11101 U
+b11100 T
+b11011 S
+b11010 R
+b11001 Q
+b11000 P
+b10111 O
+b10110 N
+b10101 M
+b10100 L
+b10011 K
+b10010 J
+b10001 I
+b10000 H
+b1111 G
+b1110 F
+b1101 E
+b1100 D
+b1011 C
+b1010 B
+b1001 A
+b1000 @
+b111 ?
+b110 >
+b101 =
+b100 <
+b11 ;
+b10 :
+b1 9
+b0 8
+$end
+#0
+$dumpvars
+b1 7
+b0 6
+b100 5
+b0 4
+b1011 3
+b0 2
+b0 1
+b0 0
+b0 /
+b1011 .
+bx -
+bx ,
+bx +
+x*
+bx )
+bx (
+bx '
+bx &
+b1000000000000011111000000000011111110000000001111111000000001111111110000000 %
+b0 $
+b1011 #
+0"
+0!
+$end
+#400
+0*
+b0 )
+b0 (
+b0 '
+b0 &
+b101000 ,
+b100000000 -
+1!
+#500
+b0 +
+b100000000 -
+b101000 ,
+1"
+#800
+0!
+#1200
+b101000 ,
+b100000000 -
+1!
+#1600
+0!
+#2000
+b100000000 -
+b101000 ,
+1!
+#2100
+0"
+#2400
+0!
+#2800
+b1 +
+b100 6
+b1111 /
+b1111 2
+b1 7
+b100 5
+b100 .
+b1111 1
+b11111111 0
+b100000000 -
+1!
+#2900
+b1 6
+b10000000000000111110000000000111111000000000011111100000000011111110000000000111111 %
+b1111 7
+b10 5
+b0 2
+b0 1
+b0 0
+b1 /
+b10 .
+b1 4
+b10 3
+b10 #
+b1 $
+#3200
+0!
+#3600
+b10 +
+1!
+#3700
+b10000000000000111110000000000111111100000000011111110000000011111111100000000111111100000 %
+b1 7
+b100 5
+b1 6
+b1 /
+b1000 .
+b0 2
+b0 1
+b1000 3
+b0 0
+b1000 #
+#4000
+0!
+#4400
+b11 +
+1!
+#4500
+b1000000000000011111000000000011111110000000001111111000000001111111110000000011111110000000 %
+b1 7
+b100 5
+b1 6
+b1 /
+b1010 .
+b0 2
+b0 1
+b1010 3
+b0 0
+b1010 #
+#4800
+0!
+#5200
+b100 +
+1!
+#5300
+b100000000000001111100000000001111111000000000111111100000000111111111000000001111111000000000111111100000000001111100000000000001000000000000000000000000000000000000 %
+b1 7
+b100 5
+b100 6
+b110 /
+b100 .
+b0 2
+b0 1
+b110 4
+b100 3
+b0 0
+b100 #
+b110 $
+#5600
+0!
+#6000
+b101 +
+1!
+#6100
+b100 6
+b1000000000000011110000000000011111000000000001111100000000001111110000000000011111000000000001111100000000000011110000000000000010000000000000000000000000000000000000000000000000 %
+b1111 7
+b1 5
+b111 /
+b1 .
+b0 2
+b0 1
+b111 4
+b1 3
+b0 0
+b1 #
+b111 $
+#6400
+0!
+#6800
+b110 +
+1!
+#6900
+b100 6
+b10000000000000111110000000000111111000000000011111100000000011111110000000000111111000000000011111100000000000111110000000000000100000000000000000000000000000000000000000000000000 %
+b1111 7
+b10 5
+b111 /
+b10 .
+b0 2
+b0 1
+b10 3
+b0 0
+b10 #
+#7200
+0!
+#7600
+b111 +
+1!
+#7700
+b100 6
+b1000000000000011111000000000011111110000000001111111000000001111111110000000011111110000000001111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b111 /
+b111 .
+b0 2
+b0 1
+b111 3
+b0 0
+b111 #
+#8000
+0!
+#8400
+b1000 +
+1!
+#8500
+b100 6
+b10000000000000111110000000000111111100000000011111110000000011111111100000000111111100000000011111110000000000111110000000000000100000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1000 .
+b111 /
+b0 2
+b0 1
+b1000 3
+b0 0
+b1000 #
+#8800
+0!
+#9200
+b1001 +
+1!
+#9300
+b100 6
+b100000000000001111100000000001111111000000000111111100000000111111111000000001111111000000000111111100000000001111100000000000001000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b111 /
+b1001 .
+b0 2
+b0 1
+b1001 3
+b0 0
+b1001 #
+#9600
+0!
+#10000
+b1010 +
+1!
+#10100
+b100 6
+b1000000000000011111000000000001111110000000000111111000000000011111110000000001111110000000000111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b111 /
+b1101 .
+b0 2
+b0 1
+b1101 3
+b0 0
+b1101 #
+#10400
+0!
+#10800
+b1011 +
+1!
+#10900
+b100 6
+b100000000000001111100000000001111111000000000111111100000000111111111000000001111111000000000111111100000000001111100000000000001000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1000 /
+b101 .
+b0 2
+b0 1
+b1000 4
+b101 3
+b0 0
+b101 #
+b1000 $
+#11200
+0!
+#11600
+b1100 +
+1!
+#11700
+b100 6
+b10000000000000111110000000000111111100000000011111110000000011111111100000000111111100000000011111110000000000111110000000000000100000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1000 /
+b111 .
+b0 2
+b0 1
+b111 3
+b0 0
+b111 #
+#12000
+0!
+#12400
+b1101 +
+1!
+#12500
+b100 6
+b100000000000001111100000000001111111000000000111111100000000111111111000000001111111000000000111111100000000001111100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1001 /
+b100 .
+b0 2
+b0 1
+b1001 4
+b100 3
+b0 0
+b100 #
+b1001 $
+#12800
+0!
+#13200
+b1110 +
+1!
+#13300
+b100 6
+b10000000000000111110000000000111111100000000011111110000000011111111100000000111111100000000011111110000000000111110000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1001 /
+b110 .
+b0 2
+b0 1
+b110 3
+b0 0
+b110 #
+#13600
+0!
+#14000
+b1111 +
+1!
+#14100
+b100 6
+b100000000000001111100000000001111111000000000111111100000000111111111000000001111111000000000111111100000000001111100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1001 /
+b1010 .
+b0 2
+b0 1
+b1010 3
+b0 0
+b1010 #
+#14400
+0!
+#14800
+b10000 +
+1!
+#14900
+b100 6
+b10000000000000111110000000000111111100000000011111110000000001111111100000000111111100000000011111110000000000111110000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1001 /
+b1100 .
+b0 2
+b0 1
+b1100 3
+b0 0
+b1100 #
+#15200
+0!
+#15600
+b10001 +
+1!
+#15700
+b100 6
+b100000000000001111100000000001111111000000000111111100000000111111110000000001111111000000000111111100000000001111100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b111 7
+b11 5
+b11 .
+b1010 /
+b0 2
+b0 1
+b1010 4
+b11 3
+b0 0
+b11 #
+b1010 $
+#16000
+0!
+#16400
+b10010 +
+1!
+#16500
+b100 6
+b1000000000000011111000000000011111110000000001111111000000001111111110000000011111110000000001111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1010 /
+b111 .
+b0 2
+b0 1
+b111 3
+b0 0
+b111 #
+#16800
+0!
+#17200
+b10011 +
+1!
+#17300
+b100 6
+b10000000000000111110000000000111111100000000011111110000000011111111100000000111111100000000011111110000000000111110000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1000 .
+b1010 /
+b0 2
+b0 1
+b1000 3
+b0 0
+b1000 #
+#17600
+0!
+#18000
+b10100 +
+1!
+#18100
+b100 6
+b1000000000000011111000000000001111110000000000111111000000000011111110000000001111110000000000111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1010 /
+b1101 .
+b0 2
+b0 1
+b1101 3
+b0 0
+b1101 #
+#18400
+0!
+#18800
+b10101 +
+1!
+#18900
+b100 6
+b10000000000000011110000000000001111100000000000111110000000000011111100000000001111100000000000111110000000000011110000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1010 /
+b1110 .
+b0 2
+b0 1
+b1110 3
+b0 0
+b1110 #
+#19200
+0!
+#19600
+b10110 +
+1!
+#19700
+b100 6
+b1000000000000011111000000000011111110000000001111111000000001111111100000000011111110000000001111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b111 7
+b11 5
+b1011 /
+b11 .
+b0 2
+b0 1
+b1011 4
+b11 3
+b0 0
+b11 #
+b1011 $
+#20000
+0!
+#20400
+b10111 +
+1!
+#20500
+b100 6
+b10000000000000111110000000000111111100000000011111110000000011111111100000000111111100000000011111110000000000111110000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1011 /
+b111 .
+b0 2
+b0 1
+b111 3
+b0 0
+b111 #
+#20800
+0!
+#21200
+b11000 +
+1!
+#21300
+b100 6
+b100000000000001111100000000001111111000000000111111100000000111111111000000001111111000000000111111100000000001111100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1000 .
+b1011 /
+b0 2
+b0 1
+b1000 3
+b0 0
+b1000 #
+#21600
+0!
+#22000
+b11001 +
+1!
+#22100
+b100 6
+b100000000000001111100000000001111111000000000111111100000000111111111000000001111111000000000111111100000000001111100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1011 /
+b1011 .
+b0 2
+b0 1
+b1011 3
+b0 0
+b1011 #
+#22400
+0!
+#22800
+b11010 +
+1!
+#22900
+b100 6
+b1000000000000011111000000000011111110000000001111111000000000111111110000000011111110000000001111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b1011 /
+b1100 .
+b0 2
+b0 1
+b1100 3
+b0 0
+b1100 #
+#23200
+0!
+#23600
+b11011 +
+1!
+#23700
+b1111 7
+b1 5
+b100 6
+b1111000000000001111100000000000111110000000000111111000000000001111100000000000111110000000000001111000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1100 /
+b1 .
+b0 2
+b0 1
+b1100 4
+b1 3
+b0 0
+b1 #
+b1100 $
+#24000
+0!
+#24400
+b11100 +
+1!
+#24500
+b11111000000000011111110000000001111111000000001111111110000000011111110000000001111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b100 6
+b1100 /
+b101 .
+b0 2
+b0 1
+b101 3
+b0 0
+b101 #
+#24800
+0!
+#25200
+b11101 +
+1!
+#25300
+b11111000000000011111110000000001111111000000001111111110000000011111110000000001111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b100 6
+b1100 /
+b1000 .
+b0 2
+b0 1
+b1000 3
+b0 0
+b1000 #
+#25600
+0!
+#26000
+b11110 +
+1!
+#26100
+b11111000000000011111110000000001111111000000001111111110000000011111110000000001111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b100 6
+b1100 /
+b1011 .
+b0 2
+b0 1
+b1011 3
+b0 0
+b1011 #
+#26400
+0!
+#26800
+b11111 +
+1!
+#26900
+b1111100000000000111111000000000011111100000000001111111000000000111111000000000011111100000000001111100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b100 6
+b1100 /
+b1101 .
+b0 2
+b0 1
+b1101 3
+b0 0
+b1101 #
+#27200
+0!
+#27600
+b100000 +
+1!
+#27700
+b1111000000000000111110000000000011111000000000001111110000000000111110000000000011111000000000001111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b100 6
+b1100 /
+b1110 .
+b0 2
+b0 1
+b1110 3
+b0 0
+b1110 #
+#28000
+0!
+#28400
+b100001 +
+1!
+#28500
+b111 7
+b11 5
+b100 6
+b1111111000000000111111100000000111111110000000001111111000000000111111100000000001111100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1101 /
+b11 .
+b0 2
+b0 1
+b1101 4
+b11 3
+b0 0
+b11 #
+b1101 $
+#28800
+0!
+#29200
+b100010 +
+1!
+#29300
+b11111110000000001111111000000001111111110000000011111110000000001111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b100 6
+b1101 /
+b100 .
+b0 2
+b0 1
+b100 3
+b0 0
+b100 #
+#29600
+0!
+#30000
+b100011 +
+1!
+#30100
+b1111110000000000111111000000000011111110000000001111110000000000111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b100 6
+b1101 /
+b1101 .
+b0 2
+b0 1
+b1101 3
+b0 0
+b1101 #
+#30400
+0!
+#30800
+b100100 +
+1!
+#30900
+b1 7
+b100 5
+b100 6
+b1111111000000001111111110000000011111110000000001111111000000000011111000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1110 /
+b1001 .
+b0 2
+b0 1
+b1110 4
+b1001 3
+b0 0
+b1001 #
+b1110 $
+#31200
+0!
+#31600
+b100101 +
+1!
+#31700
+b111111100000000111111111000000001111111000000000111111100000000001111100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b100 6
+b1110 /
+b1011 .
+b0 2
+b0 1
+b1011 3
+b0 0
+b1011 #
+#32000
+0!
+#32400
+b100110 +
+1!
+#32500
+b1111110000000000111111100000000011111100000000001111110000000000111110000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1 7
+b100 5
+b100 6
+b1110 /
+b1101 .
+b0 2
+b0 1
+b1101 3
+b0 0
+b1101 #
+#32800
+0!
+#33200
+b100111 +
+1!
+#33300
+b1 7
+b100 5
+b100 6
+b11111111100000000111111100000000011111110000000000111110000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 %
+b1111 /
+b110 .
+b0 2
+b0 1
+b1111 4
+b110 3
+b0 0
+b110 #
+b1111 $
+#33600
+0!
+#34000
+b101000 +
+1!
+#34400
+0!
+#34800
+b101000 ,
+b100000000 -
+1!
+#35200
+0!
+#35600
+b100000000 -
+b101000 ,
+1!
+#36000
+0!
+#36400
+b101000 ,
+b100000000 -
+1!
+#36800
+0!
+#37200
+b100000000 -
+b101000 ,
+1!
+#37600
+0!
+#38000
+b101000 ,
+b100000000 -
+1!
+#38400
+0!
+#38800
+b100000000 -
+b101000 ,
+1!
+#39200
+0!
+#39600
+b101000 ,
+b100000000 -
+1!
+#40000
+0!
+#40400
+b100000000 -
+b101000 ,
+1!
+#40800
+0!
+#41200
+b101000 ,
+b100000000 -
+1!
+#41600
+0!
+#42000
+b100000000 -
+b101000 ,
+1!
+#42400
+0!
+#42800
+b101000 ,
+b100000000 -
+1!
+#43200
+0!
+#43600
+b100000000 -
+b101000 ,
+1!
+#44000
+0!
+#44400
+b101000 ,
+b100000000 -
+1!
+#44800
+0!
+#45200
+b100000000 -
+b101000 ,
+1!
+#45600
+0!
+#46000
+b101000 ,
+b100000000 -
+1!
+#46400
+0!
+#46800
+b100000000 -
+b101000 ,
+1!
+#47200
+0!
+#47600
+b101000 ,
+b100000000 -
+1!
+#48000
+0!
+#48400
+b100000000 -
+b101000 ,
+1!
+#48800
+0!
+#49200
+b101000 ,
+b100000000 -
+1!
+#49600
+0!
+#50000
+b100000000 -
+b101000 ,
+1!
+#50400
+0!
+#50800
+b101000 ,
+b100000000 -
+1!
+#51200
+0!
+#51600
+b100000000 -
+b101000 ,
+1!
+#52000
+0!
+#52400
+b101000 ,
+b100000000 -
+1!
+#52800
+0!
+#53200
+b100000000 -
+b101000 ,
+1!
+#53600
+0!
+#54000
+b101000 ,
+b100000000 -
+1!
+#54400
+0!
+#54800
+b100000000 -
+b101000 ,
+1!
+#55200
+0!
+#55600
+b101000 ,
+b100000000 -
+1!
+#56000
+0!
+#56400
+b100000000 -
+b101000 ,
+1!
+#56800
+0!
+#57200
+b101000 ,
+b100000000 -
+1!
+#57600
+0!
+#58000
+b100000000 -
+b101000 ,
+1!
+#58400
+0!
+#58800
+b101000 ,
+b100000000 -
+1!
+#59200
+0!
+#59600
+b100000000 -
+b101000 ,
+1!
+#60000
+0!
+#60400
+b101000 ,
+b100000000 -
+1!
+#60800
+0!
+#61200
+b100000000 -
+b101000 ,
+1!
+#61600
+0!
+#62000
+b101000 ,
+b100000000 -
+1!
+#62400
+0!
+#62800
+b100000000 -
+b101000 ,
+1!
+#63200
+0!
+#63600
+b101000 ,
+b100000000 -
+1!
+#64000
+0!
+#64400
+b100000000 -
+b101000 ,
+1!
+#64800
+0!
+#65200
+b101000 ,
+b100000000 -
+1!
+#65600
+0!
+#66000
+b100000000 -
+b101000 ,
+1!
+#66400
+0!
+#66800
+b101000 ,
+b100000000 -
+1!
+#67200
+0!
+#67600
+b100000000 -
+b101000 ,
+1!
+#68000
+0!
+#68400
+b101000 ,
+b100000000 -
+1!
+#68800
+0!
+#69200
+b100000000 -
+b101000 ,
+1!
+#69600
+0!
+#70000
+b101000 ,
+b100000000 -
+1!
+#70400
+0!
+#70800
+b100000000 -
+b101000 ,
+1!
+#71200
+0!
+#71600
+b101000 ,
+b100000000 -
+1!
+#72000
+0!
+#72400
+b100000000 -
+b101000 ,
+1!
+#72800
+0!
+#73200
+b101000 ,
+b100000000 -
+1!
+#73600
+0!
+#74000
+b100000000 -
+b101000 ,
+1!
+#74400
+0!
+#74800
+b101000 ,
+b100000000 -
+1!
+#75200
+0!
+#75600
+b100000000 -
+b101000 ,
+1!
+#76000
+0!
+#76400
+b101000 ,
+b100000000 -
+1!
+#76800
+0!
+#77200
+b100000000 -
+b101000 ,
+1!
+#77600
+0!
+#78000
+b101000 ,
+b100000000 -
+1!
+#78400
+0!
+#78800
+b100000000 -
+b101000 ,
+1!
+#79200
+0!
+#79600
+b101000 ,
+b100000000 -
+1!
+#80000
+0!
+#80400
+b100000000 -
+b101000 ,
+1!
+#80800
+0!
+#81200
+b101000 ,
+b100000000 -
+1!
+#81600
+0!
+#82000
+b100000000 -
+b101000 ,
+1!
+#82400
+0!
+#82800
+b101000 ,
+b100000000 -
+1!
+#83200
+0!
+#83600
+b100000000 -
+b101000 ,
+1!
+#84000
+0!
+#84400
+b101000 ,
+b100000000 -
+1!
+#84800
+0!
+#85200
+b100000000 -
+b101000 ,
+1!
+#85600
+0!
+#86000
+b101000 ,
+b100000000 -
+1!
+#86400
+0!
+#86800
+b100000000 -
+b101000 ,
+1!
+#87200
+0!
+#87600
+b101000 ,
+b100000000 -
+1!
+#88000
+0!
+#88400
+b100000000 -
+b101000 ,
+1!
+#88800
+0!
+#89200
+b101000 ,
+b100000000 -
+1!
+#89600
+0!
+#90000
+b100000000 -
+b101000 ,
+1!
+#90400
+0!
+#90800
+b101000 ,
+b100000000 -
+1!
+#91200
+0!
+#91600
+b100000000 -
+b101000 ,
+1!
+#92000
+0!
+#92400
+b101000 ,
+b100000000 -
+1!
+#92800
+0!
+#93200
+b100000000 -
+b101000 ,
+1!
+#93600
+0!
+#94000
+b101000 ,
+b100000000 -
+1!
+#94400
+0!
+#94800
+b100000000 -
+b101000 ,
+1!
+#95200
+0!
+#95600
+b101000 ,
+b100000000 -
+1!
+#96000
+0!
+#96400
+b100000000 -
+b101000 ,
+1!
+#96800
+0!
+#97200
+b101000 ,
+b100000000 -
+1!
+#97600
+0!
+#98000
+b100000000 -
+b101000 ,
+1!
+#98400
+0!
+#98800
+b101000 ,
+b100000000 -
+1!
+#99200
+0!
+#99600
+b100000000 -
+b101000 ,
+1!
+#100000
+0!
+#100400
+b101000 ,
+b100000000 -
+1!
+#100800
+0!
+#101200
+b100000000 -
+b101000 ,
+1!
+#101600
+0!
+#102000
+b101000 ,
+b100000000 -
+1!
+#102400
+0!
+#102800
+b100000000 -
+b101000 ,
+1!
+#103200
+0!
+#103600
+b101000 ,
+b100000000 -
+1!
+#104000
+0!
+#104400
+b100000000 -
+b101000 ,
+1!
+#104800
+0!
+#105200
+b101000 ,
+b100000000 -
+1!
+#105600
+0!
+#106000
+b100000000 -
+b101000 ,
+1!
+#106400
+0!
+#106800
+b101000 ,
+b100000000 -
+1!
+#107200
+0!
+#107600
+b100000000 -
+b101000 ,
+1!
+#108000
+0!
+#108400
+b101000 ,
+b100000000 -
+1!
+#108800
+0!
+#109200
+b100000000 -
+b101000 ,
+1!
+#109600
+0!
+#110000
+b101000 ,
+b100000000 -
+1!
+#110400
+0!
+#110800
+b100000000 -
+b101000 ,
+1!
+#111200
+0!
+#111600
+b101000 ,
+b100000000 -
+1!
+#112000
+0!
+#112400
+b100000000 -
+b101000 ,
+1!
+#112800
+0!
+#113200
+b101000 ,
+b100000000 -
+1!
+#113600
+0!
+#114000
+b100000000 -
+b101000 ,
+1!
+#114400
+0!
+#114800
+b101000 ,
+b100000000 -
+1!
+#115200
+0!
+#115600
+b100000000 -
+b101000 ,
+1!
+#116000
+0!
+#116400
+b101000 ,
+b100000000 -
+1!
