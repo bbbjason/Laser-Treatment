@@ -117,4 +117,15 @@ begin
 end
 endfunction
 
+function [5:0] popcount40;
+    input [39:0] bits;
+    integer k;
+    begin
+        popcount40 = 6'd0;
+        for (k = 0; k < 40; k = k + 1) begin
+            popcount40 = popcount40 + bits[k];
+        end
+    end
+endfunction
+
 endmodule
