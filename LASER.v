@@ -76,17 +76,16 @@ wire        better_cover = (single_scan_cover > single_best_cover);
 wire        equal_cover  = (single_scan_cover == single_best_cover);
 wire        better_index = (single_scan_idx < single_best_idx);
 
-
 wire [7:0]  pair_candidate_idx = {win_y_cur, win_x_cur};
 wire [39:0] anchor_mask = cover_mask[pair_anchor_idx];
 wire [39:0] candidate_mask = cover_mask[pair_candidate_idx];
 wire [39:0] pair_union_mask = anchor_mask | candidate_mask;
 wire [5:0]  pair_union_cover = popcount40(pair_union_mask);
 
-wire [3:0] setup_x_min = clamp_minus(pair_setup_anchor[3:0]);
-wire [3:0] setup_x_max = clamp_plus (pair_setup_anchor[3:0]);
-wire [3:0] setup_y_min = clamp_minus(pair_setup_anchor[7:4]);
-wire [3:0] setup_y_max = clamp_plus (pair_setup_anchor[7:4]);
+wire [3:0] setup_x_min = 4'd0;
+wire [3:0] setup_x_max = 4'd15;
+wire [3:0] setup_y_min = 4'd0;
+wire [3:0] setup_y_max = 4'd15;
 
 wire        pair_scan_is_last = (win_x_cur == win_x_max) && (win_y_cur == win_y_max);
 wire 	    in_pair             = (state == ST_PAIR);
